@@ -24,9 +24,11 @@ public class QuotesAdapter extends RecyclerView.Adapter<QuotesAdapter.QuotesView
     @NonNull
     @Override
     public QuotesViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        LayoutInflater inflater = LayoutInflater.from(context);
+//        LayoutInflater inflater = LayoutInflater.from(context);
+//        View view = inflater.inflate(R.layout.list_item_quotes,viewGroup,false);
+//        return new QuotesViewHolder(view);
 
-        View view = inflater.inflate(R.layout.list_item_quotes,viewGroup,false);
+        final View view = LayoutInflater.from(context).inflate(R.layout.list_item_quotes, viewGroup, false);
         return new QuotesViewHolder(view);
     }
 
