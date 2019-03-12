@@ -41,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        finally {
+            try {
+                bufferedReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         return quotes;
     }
 }

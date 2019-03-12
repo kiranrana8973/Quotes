@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    >
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <LinearLayout
-        android:padding="16dp"
         android:id="@+id/quoteContainer"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:orientation="vertical"
         android:background="@color/colorAccent"
-        >
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:src="@drawable/quote"
-            />
+            android:src="@drawable/quote" />
 
         <TextView
             android:id="@+id/txtQuote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="This is a sample quotes. You can write anything you want."
-            android:textSize="26sp"
             android:textColor="#FFF"
-            />
+            android:textSize="26sp" />
     </LinearLayout>
 </LinearLayout>
