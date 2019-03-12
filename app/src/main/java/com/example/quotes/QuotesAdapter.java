@@ -28,7 +28,7 @@ public class QuotesAdapter extends RecyclerView.Adapter<QuotesAdapter.QuotesView
 //        View view = inflater.inflate(R.layout.list_item_quotes,viewGroup,false);
 //        return new QuotesViewHolder(view);
 
-        final View view = LayoutInflater.from(context).inflate(R.layout.list_item_quotes, viewGroup, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item_quotes, viewGroup, false);
         return new QuotesViewHolder(view);
     }
 
